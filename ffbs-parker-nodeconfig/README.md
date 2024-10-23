@@ -7,7 +7,7 @@ a Gluon fork that uses routing between the nodes
 It is currently in use at Freifunk Braunschweig. 
 Other communities are interested in adopting it as well.
 
-This package installs the nodeconfig and noderoute services together
+This package installs the `nodeconfig` and `noderoute` services together
 with a set of new firewall-rules.
 
 The core services are:
@@ -21,6 +21,7 @@ The core services are:
 
 They have their corresponding services in `/etc/init.d/` and are usually quite verbose
 in `logread`.
+This package also takes care of generating the WireGuard Keypair for the node.
 
 site.conf
 ---------

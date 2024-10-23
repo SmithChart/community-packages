@@ -1,13 +1,13 @@
 ffbs-parker-nodeconfig-respondd
 ===============================
 
-This is the core package of [gluon-parker](https://github.com/ffbs/gluon-parker),
+This is a package of [gluon-parker](https://github.com/ffbs/gluon-parker),
 a Gluon fork that uses routing between the nodes
 (aka. Router devices) and the infrastructure.
 It is currently in use at Freifunk Braunschweig.
 Other communities are interested in adopting it as well.
 
-This module extends the `respondd` `statistics` object with the following
+This module extends `respondd`'s `statistics` object with the following
 info:
 
 * `gateway`: IPv4 default gateway for the client net - if set.
@@ -27,7 +27,7 @@ root@hostname:~# gluon-neighbour-info -r statistics
 ```
 
 For a node that does not have a WireGuard connection (and is thus using another node
-as gateway) this may looks like this:
+as gateway) this may look like this:
 
 ```shell
 root@anotherhostname:~# gluon-neighbour-info -r statistics
@@ -44,7 +44,7 @@ Usage with Meshviewer
 
 Meshviewer, our trusty Freiunk Network Map, can consume and display these fields.
 
-* For a meshing node we replicate the behavior of a *fastd*-based network:
+* For a meshing node we replicate the behavior of *fastd*-based networks:
   Meshviewer will resolve the MAC-addresses into the corresponding names and
   display those.
 * For a node with uplink Meshviewer will fail to parse the MAC-addresses and

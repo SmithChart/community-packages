@@ -7,7 +7,7 @@ How it is used
 --------------
 
 This module can be added as a dependency in your `image-customization.lua`.
-Afterwards you should be able to query `wireguard` from your respondd.
+Afterwards you should be able to query `wireguard` from your `respondd`.
 
 For a node with the following WireGuard interfaces:
 
@@ -40,7 +40,7 @@ peer: Gnfc/z9FDGiBC1eAi4TcnR2p5EmpE3zJTsA7KcNOnyo=
   persistent keepalive: every 15 seconds
 ```
 
-The response may looks like this:
+The response may look like this:
 
 ```shell
 root@hostname:~# gluon-neighbour-info -r wireguard

@@ -3,7 +3,7 @@
 tmpdir=/tmp/ff-Ohb0ba0u/
 
 brief_interface() {
-	echo `ip a show dev $1 | grep state | awk '{print $9}'` `ip a show dev $1 | grep inet | awk '{ print $2}'`
+	echo $(ip a show dev "$1" | grep state | awk '{print $9}') $(ip a show dev "$1" | grep inet | awk '{ print $2}')
 }
 
 echo -n 'gluon model:         '; cat /tmp/sysinfo/model

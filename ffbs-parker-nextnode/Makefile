@@ -15,7 +15,7 @@ define Package/ffbs-parker-nextnode
 endef
 
 define Package/ffbs-parker-nextnode/description
-	This package adds ebatables rules for the parker nextnode range.
+	This package adds ebtables rules for the parker nextnode range.
 	This package is needed when the nextnode-ips are outside of the
 	local net of the router - what is usually the case for parker networks.
 endef
